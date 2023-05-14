@@ -1,0 +1,28 @@
+.default-class,
+.alternate-class {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.default-class {
+    font-size: 18px;
+}
+
+.alternate-class {
+    font-size: 30px;
+}
+
+
+#default-id,
+#alternate-id {
+    font-size: 30px;
+}
+
+
+#default-id {
+    color: blue;
+}
+
+#alternate-id {
+    background-color: rgba(0, 255, 0, 0.8);
+    font-weight: bold;
+}
