@@ -8,16 +8,14 @@ body {
 
 }
 
-/* NEED TO FIX THE SIDE BAR FLEX ITEM ALIGNMENT*/
 ul {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
-  align-items: flex-start;
-
+  align-items: baseline;
+  padding-left: 10px;
 }
 
 a {
@@ -45,6 +43,9 @@ a {
 .sidebar {
   background: royalblue;
   box-sizing: border-box;
+  font-size: 24px;
+  width: 300px;
+  flex-shrink: 0;
 }
 
 .footer {
@@ -61,10 +62,20 @@ a {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 32px;
+  flex-grow: 1;
+  gap: 32px;
 }
 
 .card {
-  border: 2px solid gray;
+  /* SHADING FROM SOLUTION */
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
+  width: 300px;
+  padding: 20px;
+  flex-grow: 1;
+
+}
+
+li {
+  margin-bottom: 10px;
 }
